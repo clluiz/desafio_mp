@@ -1,0 +1,90 @@
+[
+	{
+		"id":"Broadband1",
+		"type":"bb",
+		"cost":"40",
+		"adjacency": 
+		[
+			{
+				"id":"AddonBB",
+				"addition": 0
+			},
+			{
+				"id":"Landline",
+				"addition": -40
+			}
+		]
+	},
+	{
+		"id":"Broadband2",
+		"type": "bb",
+		"cost": "60",
+		"adjacency":
+		[
+			{
+				"id":"AddonBB",
+				"addition": -10
+			},
+			{
+				"id":"TV1",
+				"addition": -10
+			},
+			{
+				"id":"Landline",
+				"addition": -40
+			},
+			{
+				"id":"TV2",
+				"addition": -20
+			}
+		]
+	},
+	{
+		"id":"TV1",
+		"type":"tv",
+		"cost": 50,
+		"adjacency":
+		[
+			{
+				"id":"AddonTV",
+				"addition": 35
+			},
+			{
+				"id":"Landline",
+				"addition": -10
+			}
+		]
+	},
+	{
+		"id":"Landline",
+		"type":"II",
+		"cost": 35,
+		"adjacency": []
+	},
+	{
+		"id":"TV2",
+		"type":"tv",
+		"cost": 120,
+		"adjacency":
+		[
+			{
+				"id":"Landline",
+				"addition": -30
+			},
+			{
+				"id":"AddonTV",
+				"addition": 15
+			}
+		]
+	},
+	{
+		"id":"AddonBB",
+		"type": "addon",
+		"cost": 10
+	},
+	{
+		"id":"AddonTV",
+		"type": "addon",
+		"cost": 0
+	}
+]
